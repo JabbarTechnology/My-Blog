@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AbduljabbarBlog</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/favicon.svg" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+
+
+<body>
+
+  <!--
+    - #HEADER
+  -->
+
+  <header>
+
+    <div class="container">
+
+      <nav class="navbar">
+
+        
+        <a href="index.html" class="logo-light">
+          <img src="./assets/images/logo.png" alt="Hebablog's logo" width="200" height="100">
+        </a>
+        <div class="btn-group">
+          <input type="button" id="btnSearch" name="btnSearch" value="Serach" />
+          <input type="text" id="txtSerach" name="txtSerach" placeholder="Serach..." />
+          <a href="#Login" class="login" style="float: right;">Login</a>
+
+          <button class="nav-menu-btn">
+            <ion-icon name="menu-outline"></ion-icon>
+        
+        </div>
+        
+        <div class="flex-wrapper">
+
+          <ul class="desktop-nav">
+
+            <li>
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+
+            <li>
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+
+            <li>
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+            <li>
+              <a href="news.html" class="nav-link">News</a>
+            </li>
+            <input type="text" id="txtSerach" name="txtSerach" placeholder="Serach..." />
+            <input type="button" id="btnSearch" name="btnSearch" value="Serach" />
+            
+            <a href="#Login" class="nav-link">Login</a>
+
+          </ul>
+
+          
+          
+        </div>
+
+        <div class="mobile-nav">
+
+          <button class="nav-close-btn">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+          <div class="wrapper">
+
+            <p class="h3 nav-title">Main Menu</p>
+
+            <ul>
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="about.html" class="nav-link">About Me</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="contact.html" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a href="news.html" class="nav-link">News</a>
+              </li>
+            </ul>
+
+          </div>
+
+          <div>
+
+            <p class="h3 nav-title">Topics</p>
+
+            <ul>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Database</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">Accessibility</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">Web Performance</a>
+              </li>
+            </ul>
+            <input type="text" id="txtSerach" name="txtSerach" placeholder="Serach..." />
+            <input type="button" id="btnSearch" name="btnSearch" value="Serach" />
+            <br>
+            <br>
+            <a href="#Login" class="login"">Login</a>
+          </div>
+
+        </div>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+
+<main>
+ 
+    <div class="contact-header">
+        <h1>Contact Me</h1>
+    </div>
+    <div class="content">
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <ul>
+                <li>Email: <a href="mailto:your.email@example.com"><ion-icon name="mail"></ion-icon></a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li>GitHub: <a href="https://github.com/your-github-profile" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
+                
+            </ul>
+        </div>
+        <div class="feedback-suggestions">
+            <h2>Feedback and Suggestions</h2>
+            <p>Your feedback is valuable to me, and I'm always open to suggestions on how to improve my blog and the content I provide. If you have any ideas or thoughts you'd like to share, please don't hesitate to reach out. Your input helps me create a better experience for all readers.</p>
+            <p>You can use the contact information above or simply fill out the form below to send your feedback:</p>
+            <form action="submit_feedback.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</main>
+
+
+
+  <!--
+    - #FOOTER
+  -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="wrapper">
+
+        <a href="#" class="footer-logo">
+          <img src="./assets/images/logo.png" alt="AbduljabbarBlog's Logo" width="150" class="logo-light">
+        </a>
+
+        <p class="footer-text">
+          Learn about Web accessibility, Web performance, and Database management.
+        </p>
+
+      </div>
+
+      <div class="wrapper">
+
+        <p class="footer-title">Quick Links</p>
+
+        <ul>
+
+          <li>
+            <a href="index.html" class="footer-link">Home</a>
+          </li>
+
+          <li>
+            <a href="about.html" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="contact.html" class="footer-link">Contact Us</a>
+          </li>
+          <li>
+            <a href="news.html" class="footer-link">News</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="wrapper">
+
+    
+        <h2 class="footer-title">
+          Let's Talk
+        </h2>
+
+          <ul class="social-link">
+
+            <li>
+              <a href="#" class="icon-box instagram">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="icon-box twitter">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="icon-box facebook">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="icon-box github">
+                <ion-icon name="logo-github"></ion-icon>
+            </a>
+            </li>
+
+
+          </ul>
+  </div>
+
+    </div>
+
+    <p class="copyright">
+      &copy; Copyright 2023 <a href="#">AbduljabbarBlog</a>
+    </p>
+
+  </footer>
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
